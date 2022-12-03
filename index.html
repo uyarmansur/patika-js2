@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Yapılacaklar Listesi</title>
+  </head>
+  <body>
+    <div class="alertiner">
+      <div class="header">
+        <img
+          src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+          class="mb-1"
+          alt=""
+        />
+        <form id="ekle">
+          <h2>Yapılacaklar Listesi</h2>
+          <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+
+          <button onclick="newElement()" class="button" type="submit">
+            Ekle
+          </button>
+        </form>
+      </div>
+      <ul id="list"></ul>
+    </div>
+    <div class="alert-wrapper">
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
